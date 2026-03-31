@@ -1,30 +1,34 @@
 # Backend API Failure Analysis
 
 ## Overview
-Backend API system designed to handle user reports with structured responses, validation, and error handling.
+Backend API project that manages reports with structured responses, validation, and error handling. The project focuses on request tracing, clean API design, and handling edge cases that commonly cause data inconsistencies.
 
 ## Features
-- REST-style API endpoints for report handling
-- Input validation and error handling
+- Create and fetch reports
+- Input validation for required fields
 - Structured JSON responses
-- Edge case handling (empty data, invalid inputs)
+- Empty-state and invalid-input handling
+- Layered backend structure
 
 ## Tech Stack
-Python, Django REST Framework, SQL
+Python, Flask, REST APIs, JSON
 
 ## Architecture
-Client → API Layer → Service Logic → Database
+Client → Routes → Service Layer → Data Model
 
 ## What I implemented
-- Designed API structure for report handling
-- Implemented response formatting and validation
-- Handled failure scenarios and edge cases
-- Simulated backend data flow
+- Built API endpoints for report creation and retrieval
+- Separated route handling from service logic
+- Added validation for missing and invalid input
+- Returned consistent JSON responses for success and failure cases
 
 ## How to run
-1. Clone repository  
-2. Install dependencies using `pip install -r requirements.txt`  
-3. Run application  
+1. Clone the repository
+2. Install dependencies with `pip install -r requirements.txt`
+3. Run `python app/app.py`
+
+## Sample Output
+See `output_example.json`
 
 ## Status
-Initial backend structure completed. Further improvements in progress.
+Improved backend prototype with validation and layered structure
