@@ -1,0 +1,8 @@
+{
+  "message": "Report created successfully",
+  "report": {
+    "report_id": 1,
+    "title": "Vendor Risk",
+    "description": "Missing MFA setup for vendor portal"
+  }
+}
